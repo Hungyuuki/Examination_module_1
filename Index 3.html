@@ -26,11 +26,12 @@
         let count = 0;
         function countVowel(string){
         for(let i = 0; i < string.length; i++){
+
         if(checkVowel(string[i])){
         count++;
     }
     }
-        return count;
+        return count===0? false:count;
     }
         let result = countVowel(createString);
         console.log(result);
